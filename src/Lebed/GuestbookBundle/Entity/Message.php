@@ -9,7 +9,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 /**
  * Class Message
  * @package Lebed\GuestbookBundle\Entity
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Lebed\GuestbookBundle\Entity\MessageRepository")
  * @ORM\Table(name="message")
  */
 class Message

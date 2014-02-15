@@ -4,3 +4,6 @@ lebed_guestbook_homepage:
 lebed_guestbook_viewMessages:
     pattern: /viewMessages
     defaults: { _controller: LebedGuestbookBundle:Default:viewMessages }
+lebed_guestbook_search:
+    pattern: /search
+    defaults: { _controller: LebedGuestbookBundle:Default:search}

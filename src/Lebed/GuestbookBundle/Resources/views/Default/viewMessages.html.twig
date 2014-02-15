@@ -1,0 +1,33 @@
+{% extends "LebedGuestbookBundle::layout.html.twig" %}
+
+    {% block title %} {{ parent() }} Guestbook {% endblock %}
+    {% block content %}
+
+        {% for message in messages %}
+
+            <div class="blog-post" style="margin-bottom: 40px;">
+                <p class="blog-post-meta">{{ message.PostedDate|date("m/d/Y") }} by <a href="#">{{ message.Author }}</a></p>
+                <h5> {{ message.Message }}</h5>
+                <p><a class="btn btn-info" href="{{ path('lebed_guestbook_viewMessages') }}"
+                      role="button">Add comment &raquo;</a></p>
+            </div><!--/span-->
+
+        {% endfor %}
+
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div>
+            {{ form_label(form.author) }} <br>
+            {{ form_widget(form.author) }}
+        </div>
+        <div>
+            {{ form_label(form.mail) }} <br>
+            {{ form_widget(form.mail) }}
+        </div>
+        <div style="padding-bottom: 20px;">
+            {{ form_label(form.message) }} <br>
+            {{ form_widget(form.message) }}
+        </div>
+        {{ form_end(form) }}
+
+    {% endblock %}
