@@ -1,0 +1,4 @@
+lebed_guestbook:
+    resource: "@LebedGuestbookBundle/Resources/config/routing.yml"
+    prefix:   /
+
