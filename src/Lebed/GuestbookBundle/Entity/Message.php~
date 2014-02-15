@@ -1,0 +1,42 @@
+<?php
+
+namespace Lebed\GuestbookBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
+
+/**
+ * Class Message
+ * @package Lebed\GuestbookBundle\Entity
+ * @ORM\Entity
+ * @ORM\Table(name="message")
+ */
+class Message
+{
+    /** @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     */
+    protected $id;
+
+    /** @ORM\Column(type="string", length=100) */
+    protected $author;
+
+    /** @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     * @Assert\Email(message = "Friend! Enter a correct email, please.")
+     */
+    protected $mail;
+
+    /** @ORM\Column(type="text") */
+    protected $message;
+
+    /**
+     * @var datetime $posted_date
+     *
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime")
+     */
+    protected $posted_date;
+}

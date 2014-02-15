@@ -1,0 +1,7 @@
+parameters:
+#    lebed_guestbook.example.class: Lebed\GuestbookBundle\Example
+
+services:
+#    lebed_guestbook.example:
+#        class: %lebed_guestbook.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
