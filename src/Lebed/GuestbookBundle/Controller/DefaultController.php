@@ -49,11 +49,35 @@ class DefaultController extends Controller
             );
         }
 
-//        return $this->render('LebedGuestbookBundle:Default:viewMessages.html.twig', array(
-//            'messages' => $messages,
-//            'form' => $form->createView(),
-//        ));
-          return new Response('Created message id ');
+        return $this->render('LebedGuestbookBundle:Default:viewMessages.html.twig', array(
+            'messages' => $messages,
+            'form' => $form->createView(),
+        ));
+     //     return new Response('Created message id ');
+    }
+
+    public function searchAction(Request $request)
+    {
+        $searcher=$this->get('searcher');
+        $result = $searcher->search($request->get('search'));
+        $repository = $this->getDoctrine()->getRepository('LebedGuestbookBundle:Message');
+        $query = $repository->createQueryBuilder('m')
+            ->where('m.id IN (:ids)')
+            ->setParameter('ids', $result)
+            ->getQuery();
+        $messages = $query->getResult();
+
+//        $messages = $this->getDoctrine()
+//            ->getRepository('LebedGuestbookBundle:Message')
+//            ->findById($result);
+
+        if (!$messages) {
+            throw $this->createNotFoundException(
+                'No messages found'
+            );
+        }
+
+        return $this->render('LebedGuestbookBundle:Default:search.html.twig', array('messages' => $messages));
     }
 
 }
