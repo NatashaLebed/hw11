@@ -84,8 +84,17 @@ doctrine:
         # path:     "%database_path%"
 
     orm:
+        entity_managers:
+            default:
+                mappings:
+                    gedmo_loggable:
+                        type: annotation
+                        prefix: Gedmo\Loggable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity"
+                        alias: GedmoLoggable # this one is optional and will default to the name set for the mapping
+                        is_bundle: false
+                auto_mapping: true
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -100,3 +109,4 @@ stof_doctrine_extensions:
         default:
             timestampable: true
             sluggable: true
+            loggable: true

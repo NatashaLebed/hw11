@@ -4,10 +4,12 @@ namespace Lebed\GuestbookBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\Loggable\Entity\MappedSuperclass;
 
 /**
  * @ORM\Table(name="post")
  * @ORM\Entity(repositoryClass="Lebed\GuestbookBundle\Entity\PostRepository")
+ * @Gedmo\Loggable
  */
 class Post
 {
@@ -20,6 +22,7 @@ class Post
 
     /**
      * @ORM\Column(length=64)
+     * @Gedmo\Versioned
      */
     protected $title;
 

@@ -10,3 +10,6 @@ lebed_guestbook_viewMessages:
 lebed_guestbook_search:
     pattern: /search
     defaults: { _controller: LebedGuestbookBundle:Default:search}
+lebed_guestbook_postPreviousVersion:
+    pattern: /previous_version
+    defaults: { _controller: LebedGuestbookBundle:Default:postPreviousVersion}
