@@ -11,32 +11,50 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
 {
     public function load(ObjectManager $manager)
     {
-            date_default_timezone_set('Europe/Kiev');
+        date_default_timezone_set('Europe/Kiev');
+        $symfony = new Category();
+        $symfony->setTitle('Symfony2');
 
-            $category1 = new Category();
-            $category1->setTitle('Databases and Doctrine');
-            $manager->persist($category1);
+            $doctrine = new Category();
+            $doctrine->setTitle('Databases and Doctrine');
+            $doctrine->setParent($symfony);
 
-            $category2 = new Category();
-            $category2->setTitle('Testing');
-            $manager->persist($category2);
+                $conf = new Category();
+                $conf->setTitle('Configuration and basic usage');
+                $conf->setParent($doctrine);
 
+                $doctrine_extension = new Category();
+                $doctrine_extension->setTitle('Doctrine Extensions');
+                $doctrine_extension->setParent($doctrine);
 
-            $category3 = new Category();
-            $category3->setTitle('Security');
-            $manager->persist($category3);
+            $templates = new Category();
+            $templates->setTitle('Creating and using Templates');
+            $templates->setParent($symfony);
 
+                $twig = new Category();
+                $twig->setTitle('Twig');
+                $twig->setParent($templates);
 
-            $category4 = new Category();
-            $category4->setTitle('Service Container');
-            $manager->persist($category4);
+                    $twig_extension = new Category();
+                    $twig_extension->setTitle('Twig Extension');
+                    $twig_extension->setParent($twig);
 
+                $template_service = new Category();
+                $template_service->setTitle('Templating Service');
+                $template_service->setParent($templates);
 
-            $manager->flush();
-        $this->addReference('databases-and-doctrine-category', $category1);
-        $this->addReference('testing-category', $category2);
-        $this->addReference('security-category', $category3);
-        $this->addReference('service-container-category', $category4);
+        $manager->persist($symfony);
+        $manager->persist($doctrine);
+        $manager->persist($conf);
+        $manager->persist($doctrine_extension);
+        $manager->persist($templates);
+        $manager->persist($twig);
+        $manager->persist($twig_extension);
+        $manager->persist($template_service);
+
+        $manager->flush();
+
+        $this->addReference('configuration-and-basic-usage', $conf);
 
     }
 

@@ -5,14 +5,13 @@ namespace Lebed\GuestbookBundle\Entity;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
 
-
 /**
  * @Gedmo\Tree(type="nested")
  * @ORM\Table(name="categories")
  * use repository for handy tree functions
- * @ORM\Entity(repositoryClass="Lebed\GuestbookBundle\Entity\CategoryRepository")
+ * @ORM\Entity(repositoryClass="Gedmo\Tree\Entity\Repository\NestedTreeRepository")
  */
-class Category
+class Category_test
 {
     /**
      * @ORM\Column(name="id", type="integer")
@@ -25,11 +24,6 @@ class Category
      * @ORM\Column(name="title", type="string", length=64)
      */
     private $title;
-
-    /**
-     * @ORM\OneToMany(targetEntity="Post", mappedBy="category")
-     */
-    protected $posts;
 
     /**
      * @Gedmo\TreeLeft
@@ -57,7 +51,7 @@ class Category
 
     /**
      * @Gedmo\TreeParent
-     * @ORM\ManyToOne(targetEntity="Category", inversedBy="children")
+     * @ORM\ManyToOne(targetEntity="Category_test", inversedBy="children")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $parent;
@@ -73,8 +67,6 @@ class Category
     public function __construct()
     {
         $this->children = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->posts = new \Doctrine\Common\Collections\ArrayCollection();
-
     }
 
     /**
@@ -91,7 +83,7 @@ class Category
      * Set title
      *
      * @param string $title
-     * @return Category
+     * @return Category_test
      */
     public function setTitle($title)
     {
@@ -114,7 +106,7 @@ class Category
      * Set lft
      *
      * @param integer $lft
-     * @return Category
+     * @return Category_test
      */
     public function setLft($lft)
     {
@@ -137,7 +129,7 @@ class Category
      * Set lvl
      *
      * @param integer $lvl
-     * @return Category
+     * @return Category_test
      */
     public function setLvl($lvl)
     {
@@ -160,7 +152,7 @@ class Category
      * Set rgt
      *
      * @param integer $rgt
-     * @return Category
+     * @return Category_test
      */
     public function setRgt($rgt)
     {
@@ -183,7 +175,7 @@ class Category
      * Set root
      *
      * @param integer $root
-     * @return Category
+     * @return Category_test
      */
     public function setRoot($root)
     {
@@ -205,10 +197,10 @@ class Category
     /**
      * Set parent
      *
-     * @param \Lebed\GuestbookBundle\Entity\Category $parent
-     * @return Category
+     * @param \Lebed\GuestbookBundle\Entity\Category_test $parent
+     * @return Category_test
      */
-    public function setParent(\Lebed\GuestbookBundle\Entity\Category $parent = null)
+    public function setParent(\Lebed\GuestbookBundle\Entity\Category_test $parent = null)
     {
         $this->parent = $parent;
 
@@ -218,7 +210,7 @@ class Category
     /**
      * Get parent
      *
-     * @return \Lebed\GuestbookBundle\Entity\Category
+     * @return \Lebed\GuestbookBundle\Entity\Category_test 
      */
     public function getParent()
     {
@@ -229,7 +221,7 @@ class Category
      * Add children
      *
      * @param \Lebed\GuestbookBundle\Entity\Category $children
-     * @return Category
+     * @return Category_test
      */
     public function addChild(\Lebed\GuestbookBundle\Entity\Category $children)
     {
@@ -256,38 +248,5 @@ class Category
     public function getChildren()
     {
         return $this->children;
-    }
-
-    /**
-     * Add posts
-     *
-     * @param \Lebed\GuestbookBundle\Entity\Post $posts
-     * @return Category
-     */
-    public function addPost(\Lebed\GuestbookBundle\Entity\Post $posts)
-    {
-        $this->posts[] = $posts;
-
-        return $this;
-    }
-
-    /**
-     * Remove posts
-     *
-     * @param \Lebed\GuestbookBundle\Entity\Post $posts
-     */
-    public function removePost(\Lebed\GuestbookBundle\Entity\Post $posts)
-    {
-        $this->posts->removeElement($posts);
-    }
-
-    /**
-     * Get posts
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPosts()
-    {
-        return $this->posts;
     }
 }
