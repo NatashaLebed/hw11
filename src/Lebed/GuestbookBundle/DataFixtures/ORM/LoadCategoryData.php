@@ -28,7 +28,7 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
                 $doctrine_extension->setParent($doctrine);
 
             $templates = new Category();
-            $templates->setTitle('Creating and using Templates');
+            $templates->setTitle('Templates');
             $templates->setParent($symfony);
 
                 $twig = new Category();
@@ -55,7 +55,10 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
         $manager->flush();
 
         $this->addReference('configuration-and-basic-usage', $conf);
-
+        $this->addReference('doctrine-extensions', $doctrine_extension);
+        $this->addReference('templates', $templates);
+        $this->addReference('twig', $twig);
+        $this->addReference('twig-extension', $twig_extension);
     }
 
     public function getOrder()
