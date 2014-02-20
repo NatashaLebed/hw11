@@ -9,3 +9,7 @@
 /vendor/
 /bin/
 /composer.phar
+/component/
+/composer.phar
+/.idea/*
+*~
