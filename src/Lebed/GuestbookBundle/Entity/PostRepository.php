@@ -12,4 +12,10 @@ use Doctrine\ORM\EntityRepository;
  */
 class PostRepository extends EntityRepository
 {
+    public function findCountPostsByIdCategory($id)
+    {
+        return $this->getEntityManager()->createQuery("SELECT COUNT(p.id) FROM LebedGuestbookBundle:Post p WHERE p.category = $id")
+            ->getResult();
+
+    }
 }

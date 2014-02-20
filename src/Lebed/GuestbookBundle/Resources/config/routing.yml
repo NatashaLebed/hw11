@@ -13,3 +13,6 @@ lebed_guestbook_search:
 lebed_guestbook_postPreviousVersion:
     pattern: /previous_version
     defaults: { _controller: LebedGuestbookBundle:Default:postPreviousVersion}
+lebed_guestbook_viewPostsOfCategory:
+    pattern: /category/{id}
+    defaults: { _controller: LebedGuestbookBundle:Default:viewPostsOfCategory}

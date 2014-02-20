@@ -2,6 +2,7 @@
 
 namespace Lebed\GuestbookBundle\Controller;
 
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,7 +16,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-
         $posts = $this->getDoctrine()->getRepository('LebedGuestbookBundle:Post')
             ->findAll();
 
@@ -26,7 +26,6 @@ class DefaultController extends Controller
         }
 
         return $this->render('LebedGuestbookBundle:Default:index.html.twig', array('posts'=>$posts));
-
     }
 
     public function showAction($slug)
@@ -47,8 +46,6 @@ class DefaultController extends Controller
     public  function viewMessagesAction(Request $request)
     {
         $message = new Message();
-        $date = new \DateTime('now', null);
-        $message->setPostedDate($date);
 
         $form = $this->createForm(new MessageType(), $message);
         $form->handleRequest($request);
@@ -73,7 +70,6 @@ class DefaultController extends Controller
             'messages' => $messages,
             'form' => $form->createView(),
         ));
-     //     return new Response('Created message id ');
     }
 
     public function searchAction(Request $request)
@@ -86,10 +82,6 @@ class DefaultController extends Controller
             ->setParameter('ids', $result)
             ->getQuery();
         $messages = $query->getResult();
-
-//        $messages = $this->getDoctrine()
-//            ->getRepository('LebedGuestbookBundle:Message')
-//            ->findById($result);
 
         if (!$messages) {
             throw $this->createNotFoundException(
@@ -125,4 +117,35 @@ class DefaultController extends Controller
             array('post_title_now' => $post_title_now, 'post_title_previous' => $post_title_previous, 'post'=>$post));
     }
 
+    public function categoryTreeAction()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $repo = $em->getRepository('LebedGuestbookBundle:Category');
+        $options = array(
+            'decorate' => true,
+            'nodeDecorator' => function($node) {
+                    return '<a href="/category/'.$node['id'].'">'.$node['title'].'</a>';
+                }
+        );
+
+        $htmlTree = $repo->childrenHierarchy(null, false,  $options);
+
+        return new Response($htmlTree);
+
+    }
+
+    public function viewPostsOfCategoryAction($id)
+    {
+        $posts = $this->getDoctrine()->getRepository('LebedGuestbookBundle:Post')
+            ->findByCategory($id);
+
+        if (!$posts) {
+            throw $this->createNotFoundException(
+                'No posts found'
+            );
+        }
+
+        return $this->render('LebedGuestbookBundle:Default:index.html.twig', array('posts'=>$posts));
+    }
 }

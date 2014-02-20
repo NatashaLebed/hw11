@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0d28ae0-58a0-480f-bc5b-62c84de2dfe1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/PostRepository.php" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/PostRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig" afterPath="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hw11.iws" />
@@ -31,15 +35,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <file leaf-file-name="PostRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/PostRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="16" selection-start="3246" selection-end="3246" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1770">
+            <state line="14" column="46" selection-start="279" selection-end="305" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
               <folding>
-                <marker date="1392674786744" expanded="true" signature="2295:3320" placeholder="doctrine:" />
-                <marker date="1392674786744" expanded="true" signature="2753:3320" placeholder="orm:" />
-                <marker date="1392674786744" expanded="true" signature="2766:3264" placeholder="entity_managers:" />
-                <marker date="1392674786744" expanded="true" signature="2795:3264" placeholder="default:" />
+                <marker date="1392852082419" expanded="true" signature="372:446" placeholder="SELECT COUNT..LebedGuestbookBundle..." />
               </folding>
             </state>
           </provider>
@@ -48,41 +49,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="17" column="77" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Post.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="402" selection-end="402" vertical-scroll-proportion="114.166664" vertical-offset="3025" max-vertical-offset="3540">
-              <folding>
-                <element signature="e#48#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoctrineExtensions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/DoctrineExtensions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="3" selection-start="692" selection-end="692" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="1845">
-              <folding>
-                <element signature="e#25#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="30" selection-start="3839" selection-end="3839" vertical-scroll-proportion="0.5277778" vertical-offset="1470" max-vertical-offset="2010">
-              <folding>
-                <element signature="e#52#109#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,20 +58,76 @@
       <file leaf-file-name="postPreviousVersion.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="11" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="95" selection-start="2542" selection-end="2542" vertical-scroll-proportion="-6.875" vertical-offset="945" max-vertical-offset="2070">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="1419" selection-end="1419" vertical-scroll-proportion="-2.1747572" vertical-offset="1840" max-vertical-offset="2355">
               <folding>
-                <element signature="e#175#203#0" expanded="true" />
+                <element signature="e#53#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig">
+      <file leaf-file-name="search.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/search.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="86" selection-start="497" selection-end="497" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
+            <state line="10" column="49" selection-start="475" selection-end="517" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Searcher.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Service/SearcherService/Searcher.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="45" selection-start="367" selection-end="367" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/MessageRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="262" selection-end="520" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
               <folding>
-                <element signature="e#179#207#0" expanded="true" />
+                <marker date="1392501373213" expanded="true" signature="360:434" placeholder="SELECT m.id ..LebedGuestbookBundle..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="20.0" vertical-offset="675" max-vertical-offset="4485">
+              <folding>
+                <element signature="e#48#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,17 +146,23 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/LoadMessageData.php" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadMessageData.php" />
-        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/category_test.php" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category_test.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryTest.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/PostRepository.php" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -140,7 +170,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="y" value="33" />
+    <option name="y" value="24" />
     <option name="width" value="1368" />
     <option name="height" value="721" />
   </component>
@@ -285,6 +315,120 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine-extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine-extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine-extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Loggable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -337,6 +481,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine-extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gedmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Loggable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -360,6 +546,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GuestbookBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hw11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lebed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestbookBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SearcherService" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -684,7 +900,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="33" width="1368" height="721" extended-state="6" />
+    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -692,7 +908,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -700,11 +916,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -724,65 +940,130 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="70" selection-start="3515" selection-end="3553" vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="3495">
-          <folding />
+        <state line="19" column="7" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="3540">
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+        <state line="56" column="58" selection-start="2014" selection-end="2043" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="2835">
           <folding>
-            <element signature="e#58#104#0" expanded="false" />
+            <element signature="e#53#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="70" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="435">
+        <state line="17" column="77" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="23" selection-start="3999" selection-end="3999" vertical-scroll-proportion="0.0" vertical-offset="3310" max-vertical-offset="3975">
           <folding>
-            <element signature="e#58#104#0" expanded="false" />
+            <element signature="e#48#86#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="16" selection-start="3246" selection-end="3246" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="3025" max-vertical-offset="3540">
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/DoctrineExtensions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="3" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="30" selection-start="3839" selection-end="3839" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="2010">
+          <folding>
+            <element signature="e#53#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="86" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="70" selection-start="3515" selection-end="3553" vertical-scroll-proportion="0.0" vertical-offset="3150" max-vertical-offset="3495">
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="70" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="435">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadMessageData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="314" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="465">
-          <folding>
-            <element signature="e#58#104#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="22" column="26" selection-start="314" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="35" selection-start="729" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="2250">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="530">
-          <folding />
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,79 +1074,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="729" selection-end="760" vertical-scroll-proportion="-13.75" vertical-offset="105" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="270" selection-end="684" vertical-scroll-proportion="-5.0" vertical-offset="45" max-vertical-offset="1605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="1" selection-start="58" selection-end="1417" vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="780">
-          <folding>
-            <element signature="e#58#104#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadMessageData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-9.791667" vertical-offset="185" max-vertical-offset="570">
-          <folding>
-            <element signature="e#58#104#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/viewMessages.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1127" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
-          <folding>
-            <marker date="1392501373213" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392501373213" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="454" selection-end="611" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="e#206#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="58" selection-end="1467" vertical-scroll-proportion="-7.2916665" vertical-offset="170" max-vertical-offset="525">
-          <folding>
-            <element signature="e#58#104#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="28" column="30" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-9.791667" vertical-offset="185" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/DoctrineExtensions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="692" selection-end="692" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="1845">
-          <folding>
-            <element signature="e#25#76#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="19" column="3" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity/LogEntry.php">
@@ -877,62 +1093,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity/MappedSuperclass/AbstractLogEntry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="17" selection-end="55" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="3375">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="17" selection-end="55" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="3375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="402" selection-end="402" vertical-scroll-proportion="114.166664" vertical-offset="3025" max-vertical-offset="3540">
+        <state line="17" column="18" selection-start="684" selection-end="684" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/viewMessages.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1127" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="86" selection-start="497" selection-end="497" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="61.25" vertical-offset="1530" max-vertical-offset="2250">
           <folding>
             <element signature="e#48#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+        <state line="118" column="25" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="1351" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadCategoryData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="86" selection-start="497" selection-end="497" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
-          <folding>
-            <element signature="e#179#207#0" expanded="true" />
-          </folding>
+        <state line="56" column="58" selection-start="2014" selection-end="2043" vertical-scroll-proportion="-12.5" vertical-offset="495" max-vertical-offset="1005">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/DataFixtures/ORM/LoadPostData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="16" selection-start="3246" selection-end="3246" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1770">
+        <state line="17" column="77" selection-start="633" selection-end="633" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="20.0" vertical-offset="675" max-vertical-offset="4485">
           <folding>
-            <marker date="1392674786744" expanded="true" signature="2295:3320" placeholder="doctrine:" />
-            <marker date="1392674786744" expanded="true" signature="2753:3320" placeholder="orm:" />
-            <marker date="1392674786744" expanded="true" signature="2766:3264" placeholder="entity_managers:" />
-            <marker date="1392674786744" expanded="true" signature="2795:3264" placeholder="default:" />
+            <element signature="e#48#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/postPreviousVersion.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="11" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/Default/search.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="49" selection-start="475" selection-end="517" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/MessageRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="262" selection-end="520" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
           <folding>
-            <element signature="e#175#203#0" expanded="true" />
+            <marker date="1392501373213" expanded="true" signature="360:434" placeholder="SELECT m.id ..LebedGuestbookBundle..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Service/SearcherService/Searcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="367" selection-end="367" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="74" selection-start="270" selection-end="270" vertical-scroll-proportion="8.75" vertical-offset="360" max-vertical-offset="3540">
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="95" selection-start="2542" selection-end="2542" vertical-scroll-proportion="-6.875" vertical-offset="945" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Entity/PostRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="46" selection-start="279" selection-end="305" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
+          <folding>
+            <marker date="1392852082419" expanded="true" signature="372:446" placeholder="SELECT COUNT..LebedGuestbookBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="77" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lebed/GuestbookBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="30" selection-start="3839" selection-end="3839" vertical-scroll-proportion="0.5277778" vertical-offset="1470" max-vertical-offset="2010">
+        <state line="48" column="0" selection-start="1419" selection-end="1419" vertical-scroll-proportion="-2.1747572" vertical-offset="1840" max-vertical-offset="2355">
           <folding>
-            <element signature="e#52#109#0" expanded="true" />
+            <element signature="e#53#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
