@@ -21,5 +21,8 @@
                  class="%lebed_guestbook.searcher.class%">
             <argument type="service" id="guestbook.message.repository" />
         </service>
+        <service id="lebed.twig.guestbook_extension" class="Lebed\GuestbookBundle\Twig\GuestbookExtension">
+            <tag name="twig.extension" />
+        </service>
     </services>
 </container>

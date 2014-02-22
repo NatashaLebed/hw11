@@ -23,6 +23,7 @@ class DefaultController extends Controller
             throw $this->createNotFoundException(
                 'No posts found'
             );
+
         }
 
         return $this->render('LebedGuestbookBundle:Default:index.html.twig', array('posts'=>$posts));
