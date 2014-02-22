@@ -1,0 +1,18 @@
+{% extends "LebedGuestbookBundle::layout.html.twig" %}
+
+    {% block title %} {{ parent() }} Blog {% endblock %}
+    {% block content %}
+
+        {% for post in posts %}
+
+            <div class="blog-post" style="margin-bottom: 40px;">
+                <h2>{{ post.Title }}</h2>
+                <p class="blog-post-meta">{{ post.UpdatedAt|date("m/d/Y") }} by <a href="#">{{ post.Author }}</a></p>
+                <h5> {{ post.Text }}</h5>
+                <p><a class="btn btn-info" href="{{ path('lebed_guestbook_viewPost', {'slug': post.Slug} ) }}"
+                      role="button"> Read more &raquo;</a></p>
+            </div><!--/span-->
+
+        {% endfor %}
+
+    {% endblock %}

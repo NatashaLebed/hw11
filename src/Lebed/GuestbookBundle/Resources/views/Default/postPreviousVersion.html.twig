@@ -1,0 +1,14 @@
+{% extends "LebedGuestbookBundle::layout.html.twig" %}
+
+    {% block title %} {{ parent() }} post.Title {% endblock %}
+    {% block content %}
+
+        <div class="blog-post" style="margin-bottom: 40px;">
+            <h2>{{ post_title_previous }}</h2>
+            <p class="blog-post-meta">post_title_previous</p>
+            <h2>{{ post_title_now }}</h2>
+            <p class="blog-post-meta">post_title_now</p>
+            <h5> {{ post.Text }}</h5>
+        </div><!--/span-->
+
+    {% endblock %}

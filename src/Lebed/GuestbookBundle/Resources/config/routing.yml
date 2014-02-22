@@ -1,0 +1,18 @@
+lebed_guestbook_homepage:
+    pattern:  /
+    defaults: { _controller: LebedGuestbookBundle:Default:index }
+lebed_guestbook_viewPost:
+    pattern: /post/{slug}
+    defaults: {_controller: LebedGuestbookBundle:Default:show }
+lebed_guestbook_viewMessages:
+    pattern: /viewMessages
+    defaults: { _controller: LebedGuestbookBundle:Default:viewMessages }
+lebed_guestbook_search:
+    pattern: /search
+    defaults: { _controller: LebedGuestbookBundle:Default:search}
+lebed_guestbook_postPreviousVersion:
+    pattern: /previous_version
+    defaults: { _controller: LebedGuestbookBundle:Default:postPreviousVersion}
+lebed_guestbook_viewPostsOfCategory:
+    pattern: /category/{id}
+    defaults: { _controller: LebedGuestbookBundle:Default:viewPostsOfCategory}
