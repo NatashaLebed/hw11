@@ -1,0 +1,22 @@
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+
+            <a class="blog-nav-item active" href="{{ path('lebed_guestbook_homepage') }}">{% trans %}Home{% endtrans %}</a>
+            <a class="blog-nav-item" href="#">{% trans %}About me{% endtrans %}</a>
+            <a class="blog-nav-item" href="{{ path('lebed_guestbook_viewMessages') }}">{% trans %}Guestbook{% endtrans %}</a>
+
+            {% block search %}
+
+                <div class="search">
+                    <form action="{{ path('lebed_guestbook_search') }}" metod="POST" class="form-search">
+                        <input type="text" name="search" class="input-medium search-query" />
+                        <input type="submit" class="btn" value="Search"/>
+                    </form>
+                </div>
+
+            {% endblock %}
+
+        </nav>
+    </div>
+</div>

@@ -1,6 +1,8 @@
 lebed_guestbook_homepage:
-    pattern:  /
+    pattern:  /{_locale}
     defaults: { _controller: LebedGuestbookBundle:Default:index }
+    requirements:
+        _locale: en|ru
 lebed_guestbook_viewPost:
     pattern: /post/{slug}
     defaults: {_controller: LebedGuestbookBundle:Default:show }
@@ -10,9 +12,6 @@ lebed_guestbook_viewMessages:
 lebed_guestbook_search:
     pattern: /search
     defaults: { _controller: LebedGuestbookBundle:Default:search}
-lebed_guestbook_postPreviousVersion:
-    pattern: /previous_version
-    defaults: { _controller: LebedGuestbookBundle:Default:postPreviousVersion}
 lebed_guestbook_viewPostsOfCategory:
     pattern: /category/{id}
     defaults: { _controller: LebedGuestbookBundle:Default:viewPostsOfCategory}

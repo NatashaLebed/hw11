@@ -7,10 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Lebed\GuestbookBundle\Entity\Message;
-use Lebed\GuestbookBundle\Entity\Post;
-use Lebed\GuestbookBundle\Entity\Category;
 use Lebed\GuestbookBundle\Form\Type\MessageType;
-use Gedmo\Loggable\Entity\LogEntry;
 
 class DefaultController extends Controller
 {
@@ -23,8 +20,11 @@ class DefaultController extends Controller
             throw $this->createNotFoundException(
                 'No posts found'
             );
-        }
 
+        }
+//        $translated = $this->get('translator')->trans('Symfony2 is great');
+//
+//        return new Response($translated);
         return $this->render('LebedGuestbookBundle:Default:index.html.twig', array('posts'=>$posts));
     }
 
@@ -32,12 +32,6 @@ class DefaultController extends Controller
     {
         $post = $this->getDoctrine()->getRepository('LebedGuestbookBundle:Post')
             ->findOneBySlug($slug);
-
-        //for test loggable
-        $post->setTitle('New Title Super Title Super Kruper Paratruper');
-        $em = $this->getDoctrine()->getManager();
-        $em->persist($post);
-        $em->flush();
 
         return $this->render('LebedGuestbookBundle:Default:show.html.twig', array('post'=>$post));
 
@@ -90,31 +84,6 @@ class DefaultController extends Controller
         }
 
         return $this->render('LebedGuestbookBundle:Default:search.html.twig', array('messages' => $messages));
-    }
-
-    public function postPreviousVersionAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-        $repo = $em->getRepository('Gedmo\Loggable\Entity\LogEntry');
-
-//        $post = $this->getDoctrine()->getRepository('LebedGuestbookBundle:Post')->find(1);
-//        $post->setTitle('New Title Super Title Super Kruper Paratruper');
-//        $em = $this->getDoctrine()->getManager();
-//        $em->persist($post);
-//        $em->flush();
-
-        $post = $em->find('LebedGuestbookBundle:Post', 1);
-        $post_title_now = $post->getTitle();
-
-        $logs = $repo->getLogEntries($post);
-        $pos = count($logs)-1;
-        $repo->revert($post, $pos);
-        $em->persist($post);
-        $em->flush();
-        $post_title_previous = $post->getTitle();
-
-        return $this->render('LebedGuestbookBundle:Default:postPreviousVersion.html.twig',
-            array('post_title_now' => $post_title_now, 'post_title_previous' => $post_title_previous, 'post'=>$post));
     }
 
     public function categoryTreeAction()
